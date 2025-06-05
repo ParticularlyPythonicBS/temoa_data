@@ -30,6 +30,15 @@ jobs:
         run: |
           uv sync --all-extras --dev
           uv pip install -e . --no-deps
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Vercel CLI
+        run: npm install --global vercel
+
       - name: Publish to Vercel
         run: |
           uv run datasette publish vercel temoa_utopia.sqlite \
