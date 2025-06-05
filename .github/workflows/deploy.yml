@@ -44,5 +44,5 @@ jobs:
           uv run datasette publish vercel temoa_utopia.sqlite \
             --token "${{ secrets.VERCEL_TOKEN }}" \
             --project temoa-data \
-            --scope ParticularlyPythonicBS \
+            --scope particularlypythonicbss-projects \
             --public
