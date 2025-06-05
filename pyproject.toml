@@ -1,0 +1,11 @@
+[project]
+name = "temoa-data"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "datasette>=0.65.1",
+    "datasette-publish-vercel>=0.14.2",
+    "sqlite-utils>=3.38",
+]
